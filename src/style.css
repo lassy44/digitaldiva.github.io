@@ -1,0 +1,87 @@
+.image{
+    animation: 2s ease-in-out forwards img;
+
+}
+/* Hero  section animations */
+@keyframes img{
+    0%{
+        transform: translateX(0);
+    
+    }100%{
+        transform: translateX(-2vh);
+        opacity: 1;
+    }
+}
+
+.love{
+    animation: 2s ease-in-out forwards loveU;
+}
+@keyframes loveU{
+    0%{
+        transform: translateX(0);
+        /* opacity: 0; */
+    }100%{
+        transform: translateX(-3vh);
+        opacity: 1;
+    }
+}
+
+.love_2{
+    animation: 3s ease-in-out forwards loveY;
+}
+@keyframes loveY{
+    0%{
+        transform: translateX(0);
+        /* opacity: 0; */
+    }100%{
+        transform: translateX(-3vh);
+        opacity: 1;
+    }
+}
+
+.love_3{
+    animation: 4s ease-in-out forwards loveX;
+}
+@keyframes loveX{
+    0%{
+        transform: translateX(0);
+        /* opacity: 0; */
+    }100%{
+        transform: translateX(-3vh);
+        opacity: 1;
+    }
+}
+
+@media (max-width:360px) {
+    .love, .love_2, .love_3{
+        animation: none;
+    }
+    
+}
+@media (max-width:480px) {
+    .love, .love_2, .love_3{
+        animation: none;
+    }
+    
+}
+@media (max-width:760px) {
+    .love, .love_2, .love_3{
+        animation: none;
+    }
+    
+}
+@media (max-width:920px) {
+    .love, .love_2, .love_3,.image{
+        animation: none;
+    }
+    
+}
+.dark{
+    background-color: black;
+ 
+    color: black;
+}
+.light{
+    background-color: #9db4c0;
+    color: white;
+}
