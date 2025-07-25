@@ -5,17 +5,23 @@ import { useState } from 'react';
 
 //Contact page
 const Contact = () => {
-emailjs.init("service_5z3enmx")
+  // const serviceID = process.env.REACT_APP_EMAILJS_SERVICEID 
+  // const templateID = process.env.REACT_APP_EMAILJS_TEMPLATEID 
+  // const publicKey = process.env.REACT_APP_EMAILJS_PUBLICKEY
+// emailjs.init("service_5z3enmx")
 let message = document.getElementById("message")
 // sending and recieving eamils using email.js
  const form = useRef()
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICEID;
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATEID;
+  const publicId = process.env.REACT_APP_EMAILJS_PUBLICKEY;
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_5z3enmx', 'template_bk6l69x', form.current, {
-        publicKey: 'SmdUsIPhobHI6nqqR',
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicId,
       })
       .then(
         () => {
