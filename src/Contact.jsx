@@ -2,11 +2,14 @@ import React from 'react'
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+
 //Contact page
 const Contact = () => {
-let message = document.getElementById("h1")
+emailjs.init("service_5z3enmx")
+let message = document.getElementById("message")
 // sending and recieving eamils using email.js
  const form = useRef()
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -25,7 +28,6 @@ let message = document.getElementById("h1")
         },
       );
   };
-
   return (
     <section id='contact' className='dark:text-black'>
     <div className='justify-between'>
@@ -48,7 +50,7 @@ let message = document.getElementById("h1")
        <div className='m-2'>
            <input className='xl:w-[500px] p-[8px] rounded-lg bg-black xl:dark:text-white text-white text-2xl w-[300px] md:w-[500px]' type="submit"  id="" value="Submit"  />
        </div>
-       <h1 id='h1' className='text-green-600 md:text-3xl  text-2xl text-center'></h1>
+       <h1 id='message' className='text-green-600 md:text-3xl  text-2xl text-center'></h1>
        </form>
       
   </div>
