@@ -11,8 +11,7 @@ export default defineConfig({
         "@fortawesome/free-brands-svg-icons",
         "@fortawesome/free-regular-svg-icons",
         "@fortawesome/free-solid-svg-icons",
-        "@fortawesome/react-fontawesome" ,
-        "@emailjs/browser" 
+        "@fortawesome/react-fontawesome"  
       
       ]
     }
