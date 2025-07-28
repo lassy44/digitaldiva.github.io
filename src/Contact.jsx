@@ -12,9 +12,10 @@ const Contact = () => {
 let message = document.getElementById("message")
 // sending and recieving eamils using email.js
  const form = useRef()
-  const serviceId = process.env.REACT_APP_EMAILJS_SERVICEID;
-  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATEID;
-  const publicId = process.env.REACT_APP_EMAILJS_PUBLICKEY;
+  const serviceId = import.meta.env.VITE_SERVICEID;
+  const templateId = import.meta.env.VITE_TEMPLATEID;
+  const publicId = import.meta.env.VITE_PUBLICID;
+
 
   const sendEmail = (e) => {
     e.preventDefault();
