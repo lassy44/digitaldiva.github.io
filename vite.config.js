@@ -10,6 +10,7 @@ export default defineConfig({
     base:"/assets/",
     rollupOptions:{
       external:[
+        ":\\me _port\\my-project\\src\\assets\\image _4.jpg",
         "@fortawesome/react-fontawesome",
         "@fortawesome/fontawesome-svg-core",
         "@fortawesome/free-brands-svg-icons",
