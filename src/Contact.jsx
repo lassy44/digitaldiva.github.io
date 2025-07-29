@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 //Contact page
 const Contact = () => {
-  
+
 let message = document.getElementById("message")
 // sending and recieving eamils using email.js
  const form = useRef()
@@ -24,7 +24,7 @@ let message = document.getElementById("message")
       .then(
         () => {
           console.log('SUCCESS!');
-          message.textContent = "Email sent sucessfully"
+          message.innerHTML = "Email sent sucessfully"
           
         },
         (error) => {

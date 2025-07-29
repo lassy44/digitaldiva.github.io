@@ -1,5 +1,5 @@
 import React from 'react'
-import image from './assets/image.png'
+import image from 'D:\\me _port\\my-project\\src\\assets\\image.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import{faSquareFacebook} from"@fortawesome/free-brands-svg-icons"
 import{faWhatsapp} from"@fortawesome/free-brands-svg-icons"

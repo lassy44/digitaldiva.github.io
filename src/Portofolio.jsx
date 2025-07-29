@@ -1,9 +1,9 @@
 import React from 'react'
-import clock from './assets/clock.png'
-import login from './assets/logon.png'
-import todo from './assets/todo.png'
-import weather from './assets/weather.png'
-// import todo from '/public/todo.png'
+import clock from 'D:\\me _port\\my-project\\src\\assets\\clock.png'
+import login from 'D:\\me _port\\my-project\\src\\assets\\logon.png'
+import todo from 'D:\\me _port\\my-project\\src\\assets\\todo.png'
+import weather from 'D:\\me _port\\my-project\\src\\assets\\weather.png'
+
 
 //portofolio section
 
