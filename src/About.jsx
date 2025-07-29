@@ -1,5 +1,4 @@
 import React from 'react'
-import myImage from 'D:\\me _port\\my-project\\src\\assets\\image _4.jpg'
 
 const About = () => {
   return (
@@ -10,7 +9,7 @@ const About = () => {
              
       <div className='xl:w-[500px] xl:h-[500px] border-grey xl:border-[30px]  border-[10px] rounded-[10px] mt-10 cursor-pointer w-[300px] h-[370px] xl:hover:-translate-y-2 xl:transition-transform
       md:w-[450px] md:h-[450px]   sm:w-[300px] sm:h-[370px] lg:w-[450px] lg:h-[250px] md:hover:-translate-y-2 md:transition-transform md:duration-300' >
-        <img src={myImage} alt="image" className='xl:w-[500px] xl:h-[450px] object-cover object-center opacity-[0.7]  md:w-[450px] md:h-[430px]
+        <img src="src\assets\image _4.jpg" alt="image" className='xl:w-[500px] xl:h-[450px] object-cover object-center opacity-[0.7]  md:w-[450px] md:h-[430px]
          sm:w-[300px] sm:h-[300px]  lg:w-[450px] lg:h-[430px] w-[350px] h-[350px] '/>
       </div> 
       <div className='mt-[100px] xl:ml-[80px] text-[18px] ml-2  '>
