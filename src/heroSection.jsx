@@ -1,10 +1,9 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import{faSquareFacebook} from"@fortawesome/free-brands-svg-icons"
-import{faWhatsapp} from"@fortawesome/free-brands-svg-icons"
-import{faGoogle} from"@fortawesome/free-brands-svg-icons"
-import{faInstagram} from"@fortawesome/free-brands-svg-icons"
-import{faXTwitter} from"@fortawesome/free-brands-svg-icons"
+import { FaFacebook } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaGoogle } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import './style.css'
 
 
@@ -36,23 +35,23 @@ const HeroSection = () => {
           {/* Icons */}
         <div className='xl:ml-[250px] cursor-pointer flex flex-row xl:flex xl:flex-col md:mt-[20px] sm:mt-[20px] lg:mt-[20px] mt-[20px]'>
             <div className='xl:mb-1 ml-3 sm:ml-3 lg:ml-3 md:ml-3'>
-                 <a href="http://www.facebook.com" target='_blank'><FontAwesomeIcon icon={faSquareFacebook} size='2rem' className='text-[2rem] text-[#22333b]  dark:text-black
+                 <a href="http://www.facebook.com" target='_blank'><FaFacebook size='2rem' className='text-[2rem] text-[#22333b]  dark:text-black
                   hover:text-black  dark:hover:text-gray-900'/></a> 
             </div>
            <div className='xl:mb-1 ml-3 sm:ml-3 md:ml-3 lg:ml-3'>
-                <a href="http://wa.me.watsup.com" target='_blank'><FontAwesomeIcon icon={faWhatsapp} className=' text-[#22333b]  text-[2rem] hover:text-black
+                <a href="http://wa.me.watsup.com" target='_blank'><FaWhatsapp className=' text-[#22333b]  text-[2rem] hover:text-black
                  dark:text-black  dark:hover:text-gray-900'/></a>   
             </div>
             <div className='xl:mb-1 ml-3 sm:ml-3 lg:ml-3 md:ml-3'>
-              <a href="http://www.google.com" target='_blank'><FontAwesomeIcon icon={faGoogle} className='text-[#22333b]  text-[2rem] hover:text-black
+              <a href="http://www.google.com" target='_blank'><FaGoogle className='text-[#22333b]  text-[2rem] hover:text-black
                dark:text-black  dark:hover:text-gray-900'/></a>
             </div>
            <div className='mb-1 ml-3 sm:ml-3 lg:ml-3'>
-           <a href="http://www.instagram.com" target='_blank'> <FontAwesomeIcon icon={faInstagram} className='text-[#22333b]  text-[2rem] hover:text-black
+           <a href="http://www.instagram.com" target='_blank'> <FaInstagram className='text-[#22333b]  text-[2rem] hover:text-black
             dark:text-black  dark:hover:text-gray-900'/></a>
             </div>
             <div className='xl:mb-1 sm:ml-3 ml-3 md:ml-3 lg:ml-3'>
-            <a href="http://www.x-twitter.com" target='_blank'><FontAwesomeIcon icon={faXTwitter}  className='text-[#22333b]  text-[2rem] dark:text-black
+            <a href="http://www.x-twitter.com" target='_blank'><FaXTwitter  className='text-[#22333b]  text-[2rem] dark:text-black
              hover:text-black dark:hover:text-gray-900'/></a>
             </div>
       </div>

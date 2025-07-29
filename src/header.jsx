@@ -1,9 +1,10 @@
 import React from 'react'
 import  { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import{faBars} from'@fortawesome/free-solid-svg-icons'
-import{faToggleOn} from '@fortawesome/free-solid-svg-icons'
-import { faXmark} from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaBars } from 'react-icons/fa';
+// import{faBars} from'@fortawesome/free-solid-svg-icons'
+import { FaToggleOff } from "react-icons/fa6";
+import { AiOutlineClose } from "react-icons/ai";
 // hambegeur menu toggling
 const Header = () => {
 
@@ -39,7 +40,7 @@ const toggleDarkMode = () => {
                 <li className="m-2 text-black   hover:text-gray-800 pointer hover:transition-colors  dark:text-white" ><a href="#about" > About</a></li>
                 <li className="m-2 text-black   hover:text-gray-800 pointer hover:transition-colors  dark:text-white"><a href="#portofolio" >Portofolio</a> </li>
                 <li className="mt-2 text-black   hover:text-gray-800 pointer hover:transition-colors  dark:text-white" ><a href="#contact" >Contact</a></li>
-                <FontAwesomeIcon icon={faToggleOn} onClick={toggleDarkMode}  
+                <FaToggleOff onClick={toggleDarkMode}  
                 className='text-4xl mt-2  ml-10 md:block hidden   dark:bg-[#212529] text-black '/>
 
             </ul>
@@ -56,8 +57,8 @@ const toggleDarkMode = () => {
             )}
             {/* hambeguer btns */}
             <div className='xl:mt-3 xl:hidden flex absolute top-0 md:left-[700px]  left-[350px] '>
-              { isOpen ?  (<FontAwesomeIcon icon={faXmark}   className='text-[40px]  transition-all  duration-300 ease-in'
-               onClick={toggleMenu}/>):(<FontAwesomeIcon icon={faBars}  className='text-4xl  transition-all  duration-300 ease-out' onClick={toggleMenu}/>)}   
+              { isOpen ?  (<AiOutlineClose    className='text-[40px]  transition-all  duration-300 ease-in'
+               onClick={toggleMenu}/>):(<FaBars   className='text-4xl  transition-all  duration-300 ease-out' onClick={toggleMenu}/>)}   
             </div> 
             
         </nav>

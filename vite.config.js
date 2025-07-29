@@ -8,11 +8,7 @@ export default defineConfig({
   build:{
     rollupOptions:{
       external:[
-        "@fortawesome/react-fontawesome",
-        "@fortawesome/fontawesome-svg-core",
-        "@fortawesome/free-brands-svg-icons",
-        "@fortawesome/free-regular-svg-icons",
-        "@fortawesome/free-solid-svg-icons",
+        "react-icons/fa6",
         "@emailjs/browser",
       
       ]

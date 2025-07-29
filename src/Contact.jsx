@@ -6,7 +6,7 @@ import { useState } from 'react';
 //Contact page
 const Contact = () => {
 
-let message = document.getElementById("message")
+let message = document.getElementById('message')
 // sending and recieving eamils using email.js
  const form = useRef()
   const serviceId = import.meta.env.VITE_SERVICEID;
