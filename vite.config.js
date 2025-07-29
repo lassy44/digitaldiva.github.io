@@ -15,7 +15,8 @@ export default defineConfig({
         "@fortawesome/free-brands-svg-icons",
         "@fortawesome/free-regular-svg-icons",
         "@fortawesome/free-solid-svg-icons",
-        "@emailjs/browser" 
+        "@emailjs/browser",
+        'D:\\me _port\\my-project\\src\\assets\\image _4.jpg'
       
       ]
     }
