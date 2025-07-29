@@ -5,9 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()
   ],
- 
   build:{
-    assetsPublicPath:'./',
     rollupOptions:{
       external:[
         "@fortawesome/react-fontawesome",
@@ -16,7 +14,6 @@ export default defineConfig({
         "@fortawesome/free-regular-svg-icons",
         "@fortawesome/free-solid-svg-icons",
         "@emailjs/browser",
-        'D:\\me _port\\my-project\\src\\assets\\image _4.jpg'
       
       ]
     }
