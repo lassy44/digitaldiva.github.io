@@ -7,6 +7,7 @@ export default defineConfig({
   ],
  
   build:{
+    base:"/assets/",
     rollupOptions:{
       external:[
         "@fortawesome/react-fontawesome",
