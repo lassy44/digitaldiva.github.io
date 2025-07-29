@@ -1,8 +1,6 @@
 import React from 'react'
 import  { useState } from "react";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaBars } from 'react-icons/fa';
-// import{faBars} from'@fortawesome/free-solid-svg-icons'
 import { FaToggleOff } from "react-icons/fa6";
 import { AiOutlineClose } from "react-icons/ai";
 // hambegeur menu toggling

@@ -51,7 +51,7 @@ const HeroSection = () => {
             dark:text-black  dark:hover:text-gray-900'/></a>
             </div>
             <div className='xl:mb-1 sm:ml-3 ml-3 md:ml-3 lg:ml-3'>
-            <a href="http://www.x-twitter.com" target='_blank'><FaXTwitter  className='text-[#22333b]  text-[2rem] dark:text-black
+            <a href="http://www.x-twitter.com" target='_blank'>< FaXTwitter   className='text-[#22333b]  text-[2rem] dark:text-black
              hover:text-black dark:hover:text-gray-900'/></a>
             </div>
       </div>
