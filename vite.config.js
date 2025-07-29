@@ -13,6 +13,7 @@ export default defineConfig({
         "@fortawesome/free-brands-svg-icons",
         "@fortawesome/free-regular-svg-icons",
         "@fortawesome/free-solid-svg-icons",
+        'D:\\me _port\\my-project\\src\\assets\\clock.png',
         "@emailjs/browser" 
       
       ]
