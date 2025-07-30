@@ -6,7 +6,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css'
-
+import image from './assets/image.png'
 
 const HeroSection = () => {
 //hero section
@@ -19,7 +19,7 @@ const HeroSection = () => {
              sm:w-[340px] sm:h-[340px] lg:w-[340px] lg:h-[340px] md:w-[340px] md:h-[340px] w-[340px] h-[340px] '>
               {/* hero image */}
                 <img className='absolute z-[-8] xl:w-[460px] xl:h-[510px] object-cover object-center cursor-pointer  md:w-[400px] md:h-[400px] sm:w-[400px] sm:h-[400px] 
-                 lg:h-[400px] lg:w-[400px] w-[400px] h-[400px] ' src="src\assets\image.png" alt="photo " />
+                 lg:h-[400px] lg:w-[400px] w-[400px] h-[400px] ' src={image} alt="photo " />
               
             </div>
       

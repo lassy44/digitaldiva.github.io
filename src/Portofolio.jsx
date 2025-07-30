@@ -1,5 +1,8 @@
 import React from 'react'
-
+import clock from './assets/clock.png'
+import weather from './assets/weather.png'
+import logon from './assets/logon.png'
+import todo from './assets/todo.png'
 //portofolio section
 
 const Portofolio = () => {
@@ -10,7 +13,7 @@ const Portofolio = () => {
         <div className='xl:flex xl:flex-row flex-col sm:flex-col md:grid md:grid-cols-2'>
           <div className='m-2  cursor-pointer rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] transition-transform duration-300  hover:bg-[#a393bf]
 hover:-translate-y-2 '>
-             <img src="src\assets\weather.png" alt="images" className='w-full h-[300px] rounded-md ' />
+             <img src={weather} alt="images" className='w-full h-[300px] rounded-md ' />
              <div>
              <h1>Weather App</h1>
              <p>The App was developed using HTML,CSS and Javascript. It allows users to enter their desired city and it displayes the weather
@@ -22,7 +25,7 @@ hover:-translate-y-2 '>
     <div className='m-2 rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] md:hover:-translate-y-2 md:transition-transform 
     md:duration-300 cursor-pointer 
     hover:bg-[#9589aa]'>
-    <img src ="\src\assets\clock.png" alt="images" className='xl:w-[500px] xl:h-[300px] w-[300px] h:[300px] rounded-md bg' />
+    <img src ={clock} alt="images" className='xl:w-[500px] xl:h-[300px] w-[300px] h:[300px] rounded-md bg' />
     <div>
       <h1>Real Clock</h1>
       <p>Its a real world clock developed using Css, Js and HTML. It displayes the current time</p>
@@ -33,7 +36,7 @@ hover:-translate-y-2 '>
        
       <div className='xl:m-2  m-4 rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] md:hover:-translate-y-2 md:transition-transform
        duration-300  cursor-pointer  hover:bg-[#a393bf]'>
-          <img src="\src\assets\todo.png" alt="images" className='xl:w-[500px] xl:h-[300px]  w-300px h-300px rounded-md'/>
+          <img src={todo} alt="images" className='xl:w-[500px] xl:h-[300px]  w-300px h-300px rounded-md'/>
           <div>
             <h1 className='text-2xl'>Todo List</h1>
             <p>This App allows users to add and delete their desired tasks. Developed using HTML,CSS and Javascript  ,<a href="http://margietodo.netlify.app" target='_blank' 
@@ -44,7 +47,7 @@ hover:-translate-y-2 '>
        <div className='m-2 rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] md:hover:-translate-y-2 md:transition-transform 
        md:duration-300 cursor-pointer  hover:bg-[#a393bf]'>
         <div>
-           <img src="\src\assets\logon.png" alt="images" className='xl:w-[500px] xl:h-[300px]  w-[300px] h-[300px] rounded-md '/>
+           <img src={logon} alt="images" className='xl:w-[500px] xl:h-[300px]  w-[300px] h-[300px] rounded-md '/>
            <div>
             <h1>Complete login page</h1>
             <p>Its a complete form with a login page , sign up and home page. It allows users to sign up incase there are not in the database else logining in to the home page</p>
