@@ -19,7 +19,7 @@ const About = () => {
            to the problems people are facing in the real world.</p>
         <p>Despite l being a lady, l believe l can  create a change to my MotherLand through developing
            solutions  to uganda's challenges in various sectors like Agri-Sector.</p>
-       <p> I  also have a vision and a dream of creating an AI that can solve the world`s problems in fews to come.
+       <p> I  also have a vision and a dream of creating an AI that can solve the world`s problems in fews years to come.
          <br /> Kindly contact  me on 0763424261 / 0700871187</p>
          <p>I can speak various programming languages like React , PHP, python , Javascript, html ,Css and Tailwind css </p>
         <a href="./assets/CIRRICULUM VITAE.pdf" target='_blank' download="CIRRICULUM VITAE.pdf" ><button className='py-4 px-5 mt-6 bg-blue-600 rounded-md'>Download C.V</button></a> 
