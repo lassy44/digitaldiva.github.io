@@ -24,7 +24,8 @@ let message = document.getElementById('message')
       .then(
         () => {
           console.log('SUCCESS!');
-          message.innerHTML = "Email sent sucessfully"
+          alert("Email sent sucessfully")
+       
           
         },
         (error) => {
@@ -54,7 +55,7 @@ let message = document.getElementById('message')
        <div className='m-2'>
            <input className='xl:w-[500px] p-[8px] rounded-lg bg-black xl:dark:text-white text-white text-2xl w-[300px] md:w-[500px]' type="submit"  id="" value="Submit"  />
        </div>
-       <h1 id='message' className='text-green-600 md:text-3xl  text-2xl text-center'></h1>
+    
        </form>
       
   </div>
