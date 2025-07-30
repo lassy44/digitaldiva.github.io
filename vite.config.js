@@ -1,20 +1,21 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()
   ],
-  base:'./',
   build:{
     rollupOptions:{
       external:[
-        "react-icons/fa6",
-        "@emailjs/browser",
+        "@fortawesome/free-brands-svg-icons",
+        "@fortawesome/free-regular-svg-icons",
+        "@fortawesome/free-solid-svg-icons",
+        "@fortawesome/react-fontawesome",
+        "@emailjs/browser"
       
       ]
-    }
-      
+    },
+  
+    },
 
-    }
   })
