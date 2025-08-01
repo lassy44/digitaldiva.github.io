@@ -11,7 +11,7 @@ const Portofolio = () => {
         <h1 className='text-center uppercase xl:text-4xl text-3xl  dark:text-black pb-10'>Portofolio</h1>
         {/* projectscd */}
         <div className='xl:flex xl:flex-row flex-col sm:flex-col md:grid md:grid-cols-2'>
-          <div className='m-2  cursor-pointer rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] transition-transform duration-300  hover:bg-[#a393bf]
+          <div className='m-2  cursor-pointer rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] transition-transform duration-300   hover:bg-green-500
 hover:-translate-y-2 '>
              <img src={weather} alt="images" className='w-full h-[300px] rounded-md ' />
              <div>
@@ -24,7 +24,7 @@ hover:-translate-y-2 '>
           </div>
     <div className='m-2 rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] md:hover:-translate-y-2 md:transition-transform 
     md:duration-300 cursor-pointer 
-    hover:bg-[#9589aa]'>
+    hover:bg-green-500'>
     <img src ={clock} alt="images" className='xl:w-[500px] xl:h-[300px] w-[300px] h:[300px] rounded-md bg' />
     <div>
       <h1>Real Clock</h1>
@@ -35,7 +35,7 @@ hover:-translate-y-2 '>
     </div>
        
       <div className='xl:m-2  m-4 rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] md:hover:-translate-y-2 md:transition-transform
-       duration-300  cursor-pointer  hover:bg-[#a393bf]'>
+       duration-300  cursor-pointer  hover:bg-green-500'>
           <img src={todo} alt="images" className='xl:w-[500px] xl:h-[300px]  w-300px h-300px rounded-md'/>
           <div>
             <h1 className='text-2xl'>Todo List</h1>
@@ -45,7 +45,7 @@ hover:-translate-y-2 '>
           </div>
       </div>
        <div className='m-2 rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] md:hover:-translate-y-2 md:transition-transform 
-       md:duration-300 cursor-pointer  hover:bg-[#a393bf]'>
+       md:duration-300 cursor-pointer  hover:bg-green-500'>
         <div>
            <img src={logon} alt="images" className='xl:w-[500px] xl:h-[300px]  w-[300px] h-[300px] rounded-md '/>
            <div>
