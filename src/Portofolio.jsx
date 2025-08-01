@@ -9,7 +9,7 @@ const Portofolio = () => {
   return (
     <div className='mt-[100px] p-2  z-10' id='portofolio' >
         <h1 className='text-center uppercase xl:text-4xl text-3xl  dark:text-black pb-10'>Portofolio</h1>
-        {/* projectscd */}
+        {/* projects */}
         <div className='xl:flex xl:flex-row flex-col sm:flex-col md:grid md:grid-cols-2'>
           <div className='m-2  cursor-pointer rounded-md  shadow-box justify-center text-center xl:w-[470px] xl:h-[420px] transition-transform duration-300   hover:bg-green-500
 hover:-translate-y-2 '>
