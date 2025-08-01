@@ -5,10 +5,44 @@ import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState , useEffect } from 'react';
 import './style.css'
 import image from './assets/image.png'
 
 const HeroSection = () => {
+  // random carrier generator
+  let carrierText = ["Webdeveloper", "Junior Fullstack developer"]
+    const [currentText, setCurrentText] = useState(0);
+    const [displayText, setDisplayText]  = useState('');
+    const [isDeleting, setisDeleting] = useState(false)
+    useEffect(()=>{
+      const intervalId = setInterval(()=>{
+        const fullText = carrierText[currentText]
+        if(!isDeleting){
+          // setDisplayText(fullText.substring(0,displayText))
+          if(displayText.length < fullText.length){
+            setDisplayText(fullText.substring(0,displayText.length +1))
+          }else{
+            setTimeout(() => {
+              setisDeleting(true)
+              
+            },1000);
+          }
+
+        }else{
+          if(displayText.length > 0){
+               setDisplayText(fullText.substring(0,displayText.length -1));
+          }else{
+            setisDeleting(false)
+            setCurrentText((prevText) => (prevText + 1) % carrierText.length )
+          }
+
+        }
+      },100)
+      return ()=> clearInterval(intervalId)
+    },[displayText, currentText, isDeleting])
+ 
+
 //hero section
   return (
     <section  className='xl:pt-20 md:pt-10 lg:pt-10 sm:pt-10 pt-10 '>
@@ -29,7 +63,7 @@ const HeroSection = () => {
       xl:ml-[80px] ml-6">
         <div>
            <h1 className='love xl:text-4xl text-2xl xl:py-2  md:text-2xl lg:text-2xl sm:text-2xl  '>Hi My Name is <span className='text-[#22333b] dark:text-black'>Margie DevDreamer</span></h1>
-            <p className='love_2 text-2xl xl:ml-[50px] ml-1'>I am a Junior full Stack developer</p>
+            <p className='love_2 text-2xl xl:ml-[50px] ml-1'>I am a {displayText}</p>
            <a href="#about"><button className='love_3 cursor-pointer xl:px-16 xl:py-3 px-6 py-1 bg-black rounded-[10px]
              mt-6 xl:ml-[100px] text-[#eae0d5] text-2xl shadow-black shadow-sm hover:bg-[#22333b]  '>Learn More</button></a> 
         </div>
